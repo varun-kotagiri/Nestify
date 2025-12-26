@@ -54,52 +54,54 @@ Follow the steps below to run Nestify locally.
 
 ### 1️⃣ Clone the Repository
 
-```bash
 git clone https://github.com/varun-kotagiri/Nestify.git
 cd Nestify
 
-🔄 Application Flow
+### 2️⃣ Install Dependencies
+npm install
 
-1.app.js initializes the Express server and middleware
+### 3️⃣ Environment Variables
+Create a .env file in the root directory and configure:
+PORT=8080
 
-2.Requests are routed through controllers
+###4️⃣ Start the Application
+npm start
 
-3.Controllers interact with database models
+The server will start at:
 
-4.Dynamic content is rendered using EJS views
+http://localhost:8080
 
+🧠 Application Flow
+
+1.app.js initializes the Express server
+2.Routes handle incoming requests
+3.Controllers interact with models
+4.Data is rendered dynamically via EJS views
 5.Static assets are served from the public directory
 
-🔮 Future Enhancements
+🔐 Future Enhancements
 
-User authentication and authorization
-
+The project can be extended with:
+User authentication & authorization
 CRUD operations for listings
-
-Image upload and cloud storage integration
-
-Search, filter, and pagination
-
-REST API support
-
-Deployment to cloud platforms (Render / Railway / AWS)
+Image upload & cloud storage
+Search and filter functionality
+Pagination and sorting
+REST API versioning
+Deployment (Render / Railway / AWS)
 
 
-🤝 Contributing
+🤝 Contribution Guidelines
 
 Contributions are welcome!
 
 1.Fork the repository
-
 2.Create a new branch
-
-git checkout -b feature/your-feature-name
-
+  git checkout -b feature/your-feature-name
 3.Commit your changes
-
-4.Push to your branch
-
+4.Push the branch
 5.Open a Pull Request
+
 
 👨‍💻 Author
 
