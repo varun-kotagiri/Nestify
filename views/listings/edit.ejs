@@ -1,0 +1,44 @@
+<%- layout("/layouts/boilerplate") -%>
+<body>
+  <div class="row">
+    <div class="col-8 offset-2">
+  <h2>Edit Your Listing</h2>
+  <!-- POST to the specific listing and use method-override to turn it into PUT -->
+  <form method="POST" action="/listings/<%= listing._id %>?_method=PUT" novalidate class="needs-validation">
+       <div class="mb-3">
+            <label for="title" class="form-label">Title</label>
+            <input name="title"  type="text" value="<%=listing.title%>" class="form-control" required>
+            <div class="invalid-feedback">Please enter Title</div>
+        </div>
+        <div class="mb-3">
+            <label for="description" class="form-label">Description</label>
+            <textarea name="description"  class="form-control" required><%=listing.description%></textarea>
+            <div class="invalid-feedback">Please enter Description</div>
+        </div>
+        <div class="mb-3">
+            <label for="image" class="form-label">Image</label>
+            <input name="image[url]"  type="text" value="<%= listing.image ? listing.image.url : '' %>" class="form-control" required>
+        </div>
+
+        <div class="mb-3">
+            <label for="price" class="form-label">Price</label>
+            <input name="price"  type="text" value="<%=listing.price%>" class="form-control" required>
+            <div class="invalid-feedback">Please enter valid Price</div>
+        </div>
+
+    <div class="mb-3">
+            <label for="location" class="form-label">Location</label>
+            <input name="location"  type="text" value="<%=listing.location%>" class="form-control" required>
+            <div class="invalid-feedback">Please enter valid Location</div>
+        </div>
+<div class="mb-3">
+            <label for="country" class="form-label">Country</label>
+            <input name="country"  type="text" value="<%=listing.country%>" class="form-control" required>
+            <div class="invalid-feedback">Please enter valid Country</div>
+        </div>
+
+    <button type="submit" class="btn btn-dark add-btn">Edit</button>
+  </form>
+   </div>
+  </div>
+  <script src="/js/script.js"></script>
