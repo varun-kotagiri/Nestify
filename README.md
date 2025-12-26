@@ -36,14 +36,14 @@ This repository serves as a strong foundation for applications such as listing p
 ## 📂 Project Structure
 
 Nestify/
-├── models/ # Database models and schemas
-├── views/ # EJS templates for server-side rendering
-├── public/ # Static assets (CSS, JS, images)
-├── utils/ # Helper and utility functions
-├── node_modules/ # Project dependencies
-├── schema.js # Schema / validation definitions
-├── app.js # Main Express application file
-├── package.json # Project configuration and dependencies
+- ├── models/ # Database models and schemas
+- ├── views/ # EJS templates for server-side rendering
+- ├── public/ # Static assets (CSS, JS, images)
+- ├── utils/ # Helper and utility functions
+- ├── node_modules/ # Project dependencies
+- ├── schema.js # Schema / validation definitions
+- ├── app.js # Main Express application file
+- ├── package.json # Project configuration and dependencies
 
 
 ---
@@ -64,46 +64,47 @@ npm install
 Create a .env file in the root directory and configure:
 PORT=8080
 
-###4️⃣ Start the Application
+### 4️⃣ Start the Application
 npm start
 
 The server will start at:
 
 http://localhost:8080
 
-🧠 Application Flow
+## 🧠 Application Flow
 
-1.app.js initializes the Express server
-2.Routes handle incoming requests
-3.Controllers interact with models
-4.Data is rendered dynamically via EJS views
-5.Static assets are served from the public directory
-
-🔐 Future Enhancements
-
-The project can be extended with:
-User authentication & authorization
-CRUD operations for listings
-Image upload & cloud storage
-Search and filter functionality
-Pagination and sorting
-REST API versioning
-Deployment (Render / Railway / AWS)
+1. `app.js` initializes the Express server.
+2. Routes handle incoming requests.
+3. Controllers interact with models.
+4. Data is rendered dynamically via EJS views.
+5. Static assets are served from the public directory.
 
 
-🤝 Contribution Guidelines
+## 🔐 Future Enhancements
+
+- The project can be extended with:
+- User authentication & authorization
+- CRUD operations for listings
+- Image upload & cloud storage
+- Search and filter functionality
+- Pagination and sorting
+- REST API versioning
+- Deployment (Render / Railway / AWS)
+
+
+## 🤝 Contribution Guidelines
 
 Contributions are welcome!
 
-1.Fork the repository
-2.Create a new branch
+1. Fork the repository
+2. Create a new branch
   git checkout -b feature/your-feature-name
-3.Commit your changes
-4.Push the branch
-5.Open a Pull Request
+3. Commit your changes
+4. Push the branch
+5. Open a Pull Request
 
 
-👨‍💻 Author
+## 👨‍💻 Author
 
-Varun Kotagiri
-GitHub: https://github.com/varun-kotagiri
+- Varun Kotagiri
+- GitHub: https://github.com/varun-kotagiri
