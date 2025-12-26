@@ -35,3 +35,73 @@ This repository serves as a strong foundation for applications such as listing p
 
 ## 📂 Project Structure
 
+Nestify/
+├── models/ # Database models and schemas
+├── views/ # EJS templates for server-side rendering
+├── public/ # Static assets (CSS, JS, images)
+├── utils/ # Helper and utility functions
+├── node_modules/ # Project dependencies
+├── schema.js # Schema / validation definitions
+├── app.js # Main Express application file
+├── package.json # Project configuration and dependencies
+
+
+---
+
+## ⚙️ Installation & Setup
+
+Follow the steps below to run Nestify locally.
+
+### 1️⃣ Clone the Repository
+
+```bash
+git clone https://github.com/varun-kotagiri/Nestify.git
+cd Nestify
+
+🔄 Application Flow
+
+1.app.js initializes the Express server and middleware
+
+2.Requests are routed through controllers
+
+3.Controllers interact with database models
+
+4.Dynamic content is rendered using EJS views
+
+5.Static assets are served from the public directory
+
+🔮 Future Enhancements
+
+User authentication and authorization
+
+CRUD operations for listings
+
+Image upload and cloud storage integration
+
+Search, filter, and pagination
+
+REST API support
+
+Deployment to cloud platforms (Render / Railway / AWS)
+
+
+🤝 Contributing
+
+Contributions are welcome!
+
+1.Fork the repository
+
+2.Create a new branch
+
+git checkout -b feature/your-feature-name
+
+3.Commit your changes
+
+4.Push to your branch
+
+5.Open a Pull Request
+
+👨‍💻 Author
+
+Varun Kotagiri
+GitHub: https://github.com/varun-kotagiri
